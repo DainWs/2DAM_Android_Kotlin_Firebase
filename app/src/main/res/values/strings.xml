@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Firebase</string>
+    <string name="app_preferences">com.joseDuarte.firebase.preferences</string>
+    <string name="id_token" translatable="false">110629278547-rca6r8h4kdp7ce807ctolpgcm1b169e6.apps.googleusercontent.com</string>
+    <string name="show" translatable="false">Show</string>
+    <string name="hide" translatable="false">Hide</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="password_rellenar_campo_nombre">Rellene el nombre de la contraseña</string>
+    <string name="password_rellenar_campo_password">Rellene el campo de la contraseña</string>
+</resources>

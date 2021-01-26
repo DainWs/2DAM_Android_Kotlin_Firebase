@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "110629278547",
+    "firebase_url": "https://firstfirebase-d95c6-default-rtdb.firebaseio.com",
+    "project_id": "firstfirebase-d95c6",
+    "storage_bucket": "firstfirebase-d95c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110629278547:android:987faaf47563b9b8d4c7a6",
+        "android_client_info": {
+          "package_name": "com.joseDuarte.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110629278547-eoau0tccseuki4id3refg4kbq96pq2ha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.joseDuarte.firebase",
+            "certificate_hash": "6c5e5027a0adaa3d4f8f23897bfd98b3bfcf1b7c"
+          }
+        },
+        {
+          "client_id": "110629278547-i3ss1rln7qs6itofhs4g8p9ma0k4gieg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.joseDuarte.firebase",
+            "certificate_hash": "0931d6d46ffde60c974ab71bd46fc20a2f175f2a"
+          }
+        },
+        {
+          "client_id": "110629278547-rca6r8h4kdp7ce807ctolpgcm1b169e6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSStLQoqGOyD77356Zp0JkZhSOD8i4qKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110629278547-rca6r8h4kdp7ce807ctolpgcm1b169e6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110629278547:android:d025d8111ad4c22cd4c7a6",
+        "android_client_info": {
+          "package_name": "com.joseduarte.firebasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110629278547-1u4iiib49kf9ignodb6pne53dgha7g0j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.joseduarte.firebasetest",
+            "certificate_hash": "0931d6d46ffde60c974ab71bd46fc20a2f175f2a"
+          }
+        },
+        {
+          "client_id": "110629278547-rca6r8h4kdp7ce807ctolpgcm1b169e6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSStLQoqGOyD77356Zp0JkZhSOD8i4qKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110629278547-rca6r8h4kdp7ce807ctolpgcm1b169e6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
