@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     lateinit var USER_ID: String
+    lateinit var list: ListFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,9 +39,11 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.show()
 
+        list = ListFragment.newInstance(1);
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, ListFragment.newInstance(1))
+                .replace(R.id.container, list)
                 .commitNow()
         }
 
@@ -55,6 +58,7 @@ class MainActivity : AppCompatActivity() {
     private fun setup() {
         logout_button.setOnClickListener {
             USER_DATA_LIST.clear()
+            list.update()
             finish()
         }
 
@@ -118,11 +122,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun update() {
-        var cadena: String = "------------------\n"
-        for (passwordObject in USER_DATA_LIST) {
-            cadena += passwordObject.toString()+"\n"
-        }
-        println(cadena)
+        list.update()
     }
 
 }

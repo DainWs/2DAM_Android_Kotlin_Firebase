@@ -6,6 +6,7 @@ import android.text.method.PasswordTransformationMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Adapter
 import android.widget.PopupMenu
 import android.widget.TextView
 import android.widget.Toast
@@ -26,6 +27,7 @@ import kotlinx.android.synthetic.main.add_dialog.view.*
 class ListFragment: Fragment() {
 
     private var columnCount = 1
+    private lateinit var view : RecyclerView;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +47,7 @@ class ListFragment: Fragment() {
 
         // Set the adapter
         if (view is RecyclerView) {
+            this.view = view
             with(view) {
                 layoutManager = when {
                     columnCount <= 1 -> LinearLayoutManager(context)
@@ -114,6 +117,13 @@ class ListFragment: Fragment() {
                     dialog.dismiss()
                 }
             builder.create().show()
+        }
+    }
+
+    fun update() {
+        var adapter : RecyclerView.Adapter<*>? = this.view.adapter
+        if(adapter is MyPasswordsViewAdapter) {
+            adapter.update(MainActivity.USER_DATA_LIST)
         }
     }
 

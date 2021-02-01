@@ -11,7 +11,7 @@ import com.joseDuarte.firebase.R
 import com.joseDuarte.firebase.objects.PasswordObject
 
 abstract class MyPasswordsViewAdapter(
-    private val values: Collection<PasswordObject>
+    private var values: Collection<PasswordObject>
 ) : RecyclerView.Adapter<MyPasswordsViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -28,6 +28,11 @@ abstract class MyPasswordsViewAdapter(
     }
 
     override fun getItemCount(): Int = values.size
+
+    fun update(values: Collection<PasswordObject>) {
+        this.values = values
+        notifyDataSetChanged()
+    }
 
     inner class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         val idView: TextView = view.findViewById(R.id.id)
